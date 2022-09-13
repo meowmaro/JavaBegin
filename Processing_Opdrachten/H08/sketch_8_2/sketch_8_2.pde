@@ -1,5 +1,3 @@
-int letter = 1;
-while(letter <= 10){
-  println("i");
-  letter++;
+for(int i = 0; i < 10; i++){
+  println(i + " i");
 }
