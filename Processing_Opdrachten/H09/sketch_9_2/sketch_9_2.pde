@@ -6,5 +6,5 @@ void draw(){
 }
 
 void Gemiddelde(int a, int b){
-  println("Het gemiddelde van " + a + " en " + b + " is " + (a+b)/2);
+  println("Het gemiddelde van " + a + " en " + b + " = " + (a+b)/2);
 }
