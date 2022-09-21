@@ -7,6 +7,6 @@ void setup(){
 void draw(){
 }
 int gemiddelde(int a, int b){
-  int totaal = a + b;
+  int totaal = (a + b)/2;
   return totaal;
 }
