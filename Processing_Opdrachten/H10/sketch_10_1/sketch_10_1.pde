@@ -4,7 +4,6 @@ ControlP5 cp;
 Button goedeKnop;
 Button fouteKnop;
 
-
 void setup(){
   size(400,400);
 
@@ -21,7 +20,6 @@ fouteKnop = cp.addButton("kmn")
           .setSize(100,100)
           .setCaptionLabel("Klik Mij");
 fouteKnop.setColorForeground(color(255,0,0));
-
 }
 
 void  draw(){
