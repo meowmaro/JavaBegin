@@ -4,9 +4,8 @@ ControlP5 cp;
 Button Ouders;
 Button Studenten;
 
-int studentAantal = 0;
-int ouderAantal = 0;
-
+int studentAantal = 1;
+int ouderAantal = 1;
 void setup(){
   size(400,400);
   background(255,255,255);
