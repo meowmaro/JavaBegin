@@ -9,6 +9,7 @@ void draw(){
   
 }
 
+
 void mouseMoved(){
   println(mouseY + mouseX);
   fill(mouseY + mouseX,1,1);
