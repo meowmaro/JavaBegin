@@ -9,11 +9,10 @@ void draw(){
   
 }
 
-
 void mouseMoved(){
   println(mouseY + mouseX);
   fill(mouseY + mouseX,1,1);
-  rect(mouseX,mouseY,20,20);
+  rect(mouseX,mouseY,40,40);
 }
 
 void mousePressed(){
