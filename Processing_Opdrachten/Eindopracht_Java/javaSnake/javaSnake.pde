@@ -1,7 +1,7 @@
 ArrayList<Integer> x = new ArrayList<Integer>(), y = new ArrayList<Integer>();
 int w = 30, h = 30, blocks = 20, direction = 2, foodX = 15, foodY = 15;
 int[]xDirection={0,0,1,-1}, yDirection={1,-1,0,0};
-boolean gameOver = false;
+boolean gameOver = false;e
 
 void setup() {
   size(500,500);
