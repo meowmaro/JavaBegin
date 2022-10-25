@@ -1,10 +1,10 @@
 ArrayList<Integer> x = new ArrayList<Integer>(), y = new ArrayList<Integer>();
-int w = 30, h = 30, blocks = 20, direction = 2, foodX = 15, foodY = 15;
-int[]xDirection={0,0,1,-1}, yDirection={1,-1,0,0};
+int w = 30, h = 30, blocks = 20, direction = 0, foodX = 15, foodY = 15;
+int[]xDirection={0, 0, 1, -1 }, yDirection={1, -1, 0, 0, };
 boolean gameOver = false;
 
 void setup() {
-  size(500,500);
+  size(600,600);
   x.add(0);
   y.add(15);
 }
@@ -17,7 +17,7 @@ void draw() {
     //food color
     fill(255,255,255);
     //draws the food
-    rect(foodX*blocks, foodY*blocks, blocks, blocks);
+    ellipse(foodX*blocks, foodY*blocks, blocks, blocks);
   //speed of the snake
   if(frameCount%9==0){
     //x and y position/direction of the snake
