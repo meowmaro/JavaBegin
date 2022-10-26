@@ -35,7 +35,7 @@ void draw() {
     }
     }
 }
-
+//hi
 void keyPressed() {
   //directs the snake up, down, left or right
   int newDir = keyCode == DOWN? 0: (keyCode == UP? 1: (keyCode == RIGHT? 2: (keyCode == LEFT? 3:-1)));
