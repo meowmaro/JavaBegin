@@ -17,7 +17,7 @@ void draw() {
     //food color
     fill(255,255,255);
     //draws the food
-    ellipse(foodX*blocks, foodY*blocks, blocks, blocks);
+    rect(foodX*blocks, foodY*blocks, blocks, blocks);
   //speed of the snake
   if(frameCount%9==0){
     //x and y position/direction of the snake
