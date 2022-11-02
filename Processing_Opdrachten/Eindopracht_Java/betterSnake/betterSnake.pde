@@ -21,24 +21,27 @@ void draw()  {
   //draws the food
   fill(255,0,0);
   rect(foodX * rectSize, foodY * rectSize, rectSize, rectSize);
+  //speed of the snake
   if(frameCount%7==0)  {
     x.add(0, x.get(0) + dx[dir]);
     y.add(0, y.get(0) + dy[dir]);
     if(x.get(0) < 0 || y.get(0) < 0 || x.get(0) >= w || y.get(0) >= h) gameover=true;
+    //spawns food in random direction
     if(x.get(0) == foodX && y.get(0) == foodY)  {
       foodX = (int)random(0,w);
       foodY = (int)random(0,h);
+      }else {
+        x.remove(x.size()-1);
+        y.remove(y.size()-1);
+      }
+     }
     }else {
-    x.remove(x.size()-1);
-    y.remove(y.size()-1);
-    }
-   }
-  }else{
+    //if walls or self is hit, show game over and give option to reset
     fill(255);
     textSize(30);
     textAlign(CENTER);
-    text("Game Over. Press any key", width/2, height/2);
-    if(keyPressed&&key=='')  {
+    text("Game Over. Press 'A'", width/2, height/2);
+    if(keyPressed&&key== 'a')  {
       x.clear();
       y.clear();
       x.add(5);
