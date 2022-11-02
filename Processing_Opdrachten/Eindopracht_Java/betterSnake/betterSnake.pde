@@ -52,5 +52,5 @@ void draw()  {
 }
 void keyPressed()  {
   int newDir = keyCode == DOWN? 0: (keyCode == UP? 1: (keyCode == RIGHT? 2: (keyCode == LEFT? 3:-1)));
-  if (newDir != -1) dir = newDir;
+  if(newDir != -1 && (x.size() <= 1 || !(x.get(1) ==x.get(0) + dx[newDir] && y.get (1) == y.get(0) + dy[newDir]))) dir = newDir;
 }
