@@ -37,18 +37,18 @@ void draw()  {
      }
     }else {
     //if walls or self is hit, show game over and give option to reset
-    fill(255);
-    textSize(30);
-    textAlign(CENTER);
-    text("Game Over. Press 'A'", width/2, height/2);
-    if(keyPressed&&key== 'a')  {
-      x.clear();
-      y.clear();
-      x.add(5);
-      y.add(5);
-      gameover = false;
+      fill(255);
+      textSize(30);
+      textAlign(CENTER);
+      text("Game Over. Press 'A'", width/2, height/2);
+      if(keyPressed&&key== 'a')  {
+        x.clear();
+        y.clear();
+        x.add(5);
+        y.add(5);
+        gameover = false;
+      }
     }
- }
 }
 void keyPressed()  {
   int newDir = keyCode == DOWN? 0: (keyCode == UP? 1: (keyCode == RIGHT? 2: (keyCode == LEFT? 3:-1)));
