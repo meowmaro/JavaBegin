@@ -76,6 +76,8 @@ void draw() {
     text("Press 'A' to start.", width/2, height/2);
     if (keyHold[65] != "0") {
       snakes.clear();
+      foods.clear();
+      foods.add(new FoodOBJ());
       snakeHeadSpawn();
       gameState = 1;
     }
