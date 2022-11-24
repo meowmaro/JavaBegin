@@ -117,7 +117,7 @@ void draw() {
       foods.add(new FoodOBJ());
       snakeHeadSpawn();
       gameState = 1;
-      frameSpeed = 9;
+      frameSpeed = 8;
       oldTime = millis();
       deltaTime = 0.0166;
       frames = 0;
